@@ -1,0 +1,84 @@
+
+	/* fonts */
+		/* 'Fontdiner Swanky' */
+			@import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky');
+		/* 'Bellefair' */
+			@import url('https://fonts.googleapis.com/css?family=Bellefair');
+		/* 'Abril Fatface' */
+			@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+body {
+	background-color: white;
+	text-align: center;
+}
+
+h1, h3 {
+	font-family:'Futura';
+	text-align: center;
+}
+
+p {
+	font-family:'Fontdiner Swanky';
+	text-align: center;
+}
+
+
+div {
+	width: 150px;
+	height: 150px;
+	border: 2px solid black;
+	display: inline-block;
+	margin: 10px;
+	background-color: black;
+	position: relative;
+}
+
+div.box1 p {
+	color:#B89C4F;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%);
+}
+
+div.box2 p {
+	color:white;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%);
+}
+
+/*div.box3 p {
+	color:#B89C4F;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%);
+}*/
+
+div.wide {
+	width: 550px;
+	height: 50px;
+	border: 8px solid black;
+	display: inline-block;
+	margin: 0px;
+	background-color: white;
+	position: relative;
+}
+
+div.wide p {
+	color: black;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%);
+}
