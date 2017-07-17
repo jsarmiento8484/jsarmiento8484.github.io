@@ -1,0 +1,257 @@
+
+	/* fonts */
+		/* 'Fontdiner Swanky' */
+			@import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky');
+		/* 'Bellefair' */
+			@import url('https://fonts.googleapis.com/css?family=Bellefair');
+		/* 'Abril Fatface' */
+			@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+
+body {
+	background-color: black;
+	text-align: center;
+	font-size: 12px;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+header {
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+}
+img {
+	width: 100%;
+	transform: rotate(180deg);
+}
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 0px;
+}
+section {
+	background-color: #FFC675;
+	border: 1px black solid;
+	padding: 20px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	#context h3 {
+			font-size: 20px;
+		}
+/*article {
+	background-color: #FFC675;
+	border: 1px black solid;
+	padding: 0px 0px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	line-height: 40px;
+}*/
+footer {
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+
+/*I added a h1 and h3 element to adjust the font sizes with 'em'
+and adjusted the padding and line-hieghts**********/
+h1, h2, h3 {
+	font-family:'Futura';
+	text-align: center;
+	padding: 0em;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 2em;
+}
+
+
+/********These is Unit 6's Multi-Column Layout**********/
+#two_column {
+	background-color: #FFB7CF;
+	border: 1px black solid;
+	padding: 20px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#two_column h3 {
+	font-family: "Fontdiner Swanky";
+	font-size: 20px;
+}
+#left {
+	background-color: violet;
+	border: 1px black solid;
+	padding-left: .5em;
+	padding-right: .5em;
+	float: left;
+	width: 20%;
+	margin: auto;
+}
+#left p {
+	font-family: "Futura";
+}
+#right {
+	background-color: pink;
+	border: 1px black solid;
+	padding-left: .5em;
+	padding-right: .5em;
+	float: right;
+	width: 70%;
+	margin: auto;
+}
+#right p {
+	font-family: "Futura";
+}
+#right ul {
+	font-family: "Futura";
+	text-align: left;
+	font-size: 12px;
+	line-height: 2em;
+	padding-right: 2em;
+}
+
+
+/*These are the thumbnail rows.*/
+#row1 {
+	background-color: #E89C6C;
+	border: 1px black solid;
+	width: 50%;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#row2 {
+	background-color: #E89C6C;
+	border: 1px black solid;
+	width: 50%;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#row3 {
+	background-color: #E89C6C;
+	border: 1px black solid;
+	width: 50%;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*These are the codes for Containers aka Boxes**********/
+div {
+	width: 150px;
+	height: 150px;
+	border: 2px solid black;
+	display: inline-block;
+	margin: 10px;
+	background-color: black;
+	position: relative;
+}
+
+div p {
+	font-family:'Fontdiner Swanky';
+	text-align: center;
+	line-height: 32px;
+	font-size: 18px;
+}
+div.box1 p {
+	color:#B89C4F;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%);
+}
+div.box2 p {
+	color:white;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%);
+}
+
+div.wide {
+	width: 80%;
+	height: 50px;
+	border: 8px solid black;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	position: relative;
+}
+div.wide p {
+	color: black;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+/*This is the code for Unit 8's Responsive Design lesson**********/
+
+@media only screen and (max-width: 985px) {
+
+	body {
+		font-size: 8px;
+	}
+
+	h1 {
+		font-size: 6.5em;
+	}
+
+	h2 {
+		font-size: 2.5em;
+	}
+
+	#context h3 {
+		font-size: 1.7em;
+		line-height: 2em;
+		margin: auto;
+	}
+
+	#left {
+		float:none;
+		width: 80%;
+		margin: auto;
+	}
+
+	#left p {
+		font-size: 1.5em;
+		padding-left: .75em;
+		padding-right: .75em;
+	}
+	#right {
+		float:none;
+		width: 80%;
+	}
+
+}
